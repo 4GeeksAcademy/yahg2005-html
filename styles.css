@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+.main {
+    padding-top: 2%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px; /* Opcional: Limita el ancho del main */
+}
+.botonesgrid{
+    text-align: center;
+    padding: 0.375rem; /* Ajusta el padding según el tamaño deseado */
+
+}
+#gridSingleImage {
+    padding-top: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.navbar-nav .dropdown-menu {
+    padding-right: 1%;
+    margin-bottom: 1px; /* Separación entre el menú de configuración y otros elementos */
+}
+
+.modal-footer {
+    padding-right: 15%;
+    margin-top: 10px; /* Separación entre el modal footer y otros elementos */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1px; /* Separación entre los botones del menú */
+}
+.main ul{
+   justify-content: center;
+}
+.row {
+    justify-content: center;
+}
+.nav-link.active .bi,
+.nav-link:focus .bi {
+  background-color: blue; /* Cambiar el color del icono */
+}
+
+.right-aligned {
+    text-align: right;
+  }
+  

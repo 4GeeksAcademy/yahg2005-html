@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/600px-Instagram_icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Instagram
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createPostModal">
+                        Create a New Post
+                    </button>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-gear"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Account Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="modal fade" id="createPostModal" tabindex="-1" role="dialog" aria-labelledby="createPostModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createPostModalLabel">Create a New Post</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Contenido del formulario para crear un nuevo post -->
+                    <form>
+                        <div class="form-group">
+                            <label for="caption">Caption</label>
+                            <input type="text" class="form-control" id="caption" placeholder="Add your caption of your post here">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-light"><i class="bi bi-camera"></i></button>
+                            <button type="button" class="btn btn-light"><i class="bi bi-geo-alt"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Create Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main class="main">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-toggle="tab" data-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-toggle="tab" data-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-app"></i></button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg" class="img-fluid" alt="Imagen 1">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://th.bing.com/th/id/R.2aa685dce524d4af7fbb3832d7c9d742?rik=66fa4KOlMkhh%2fg&pid=ImgRaw&r=0" class="img-fluid" alt="Imagen 2">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://wallpaperaccess.com/full/3228833.jpg" class="img-fluid" alt="Imagen 3">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://th.bing.com/th/id/R.515c0e619801f365f116d339da0f6e48?rik=aMUnhaiwfs8O4g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-2JaZ8aA8PRA%2fUbariv2XfQI%2fAAAAAAAAAxU%2fbFI9i33ENDQ%2fs1600%2fFree-Bird-mobile-hd-wallpaper.jpg&ehk=WoSRa%2fLb7524C3Rzxr%2bQSqbNXN3dEQ2D5lnzJk9dG7Y%3d&risl=&pid=ImgRaw&r=0" class="img-fluid" alt="Imagen 4">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://th.bing.com/th/id/OIP.7LNXRUIblBnFCJ_LQni8IwHaFj?rs=1&pid=ImgDetMain" class="img-fluid" alt="Imagen 5">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="https://idsb.tmgrup.com.tr/ly/uploads/images/2020/08/21/53394.jpg" class="img-fluid" alt="Imagen 6">
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">    
+              <div class="d-flex flex-column justify-content-center align-items-center container">
+                <div class="col-md-12 mb-3 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                      <p>My dear puppy</p><p><span class="right-aligned">08/22</span></p>
+                        <img class="card-img-top mx-auto d-block" src="https://th.bing.com/th/id/R.5c6bd1c31d48eeaa3ec2e55951f08e58?rik=WKxv7LskuT49Cw&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35800000%2fPuppy-dogs-35894603-1920-1200.jpg&ehk=2b0h3p5A8qcSr%2ftB6EGud0cO2SLHMhOGl0z%2bd%2bmf2F8%3d&risl=&pid=ImgRaw&r=0" alt="Card image cap">
+                        <div class="col-mb-12 mb-3">
+                            <h5 class="card-title">204 likes</h5>
+                            <p class="card-text">This is an example of a very good that you can post on Instagram</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card" style="width: 18rem;">
+                      <p>The landscape from my house</p><p><span class="right-aligned">08/20</span></p>
+                        <img class="card-img-top  mx-auto d-block" src="https://th.bing.com/th/id/OIP.CkxAgmgdPCrpGIb1nij6FQAAAA?rs=1&pid=ImgDetMain">
+                        <div class="card-body">
+                            <h5 class="card-title">The best beach in Seville</h5>
+                            <p class="card-text">This is the real paradise.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                    <div class="card" style="width: 18rem;">
+                      <p>Enjoying like a little boy</p><p><span class="right-aligned">08/23</span></p>
+                        <img class="card-img-top  mx-auto d-block" src="https://th.bing.com/th/id/OIP.T7ISpp1d7K2L78EBtVS1tAHaE7?rs=1&pid=ImgDetMain">
+                        <div class="card-body">
+                            <h5 class="card-title">Real Betis Balompié</h5>
+                            <p class="card-text">Celebrating a fantastic goal from our Joaquín.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
